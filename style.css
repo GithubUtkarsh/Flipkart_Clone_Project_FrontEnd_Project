@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.search_box{
+    width: 50rem;
+}
+.search_box::placeholder{
+    color: gray;
+    padding-left: 30px;
+}
+.nav_icon{
+    border: hidden;
+}
+
+.font-small{
+    font-size: 14px;
+}
+.search_icon{
+    width: 1.3%;
+    position: absolute;
+    top: 18px;
+    left: 186px;
+}
+.logo-drpmen{
+    height: 15px; 
+    margin-right:10px
+}
+.logoStyles{
+    height:2rem;
+}
+.nav_bottom_menu div img{
+    height: 8vh;
+}
+.nav_bottom_menu div p{
+    font-size: .9rem;
+    color: black;
+}
+.nav_bottom_menu{
+    /* scrollbar-width:none; */
+    /* border:  1px solid rebeccapurple; */
+    height: 10rem;
+}
+.list_style{
+    font-size: 12px;
+}
+.prevStyle{
+    position: absolute;
+    top: 5rem;
+    background-color: rgb(255, 255, 255);
+    opacity: 100% ;
+    height: 5.5rem;
+    width: 2.5rem;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.prevIcon{
+    color: black;
+}
+
+.carousel_01_img{
+    height: 150px;
+    margin: 60px 0px 0px 0px ;
+}
+.carousel_02_img{
+    height: 150px;
+    margin: 60px 0px 0px 0px ;
+}
+.prevStyle_02{
+    position: absolute;
+    top: 8rem;
+    background-color: rgb(207, 203, 203);
+    opacity: 100% ;
+    height: 5.5rem;
+    width: 2.5rem;
+    border-radius: 0px 5px 5px 0px;
+}
+.card_image{
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+.banner_img{
+    width: 99%;
+    margin-left: 10px;
+}
+.banner_sm_img{
+    width: 100%;
+    margin: 5px;
+}
+.social_img{
+    width: 7%;
+    margin: 10px;
+}
+.footer_logo{
+    width: 8%;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(79%) saturate(1194%) hue-rotate(1deg) brightness(103%) contrast(106%);
+}
+

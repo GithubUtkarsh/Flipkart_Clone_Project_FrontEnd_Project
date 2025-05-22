@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body class="bg-body-tertiary">
+    <header class="container header" style="height: 10vh;">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top res-header">
+
+                    <button class="navbar-toggler nav_icon" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="#" class="navbar-brand mx-4"><img src="assets/logo/Flipkart_Logo.svg" class="logoStyles"
+                            alt=""></a>
+                    <ul class="navbar-nav me-auto lists">
+                        <li class="nav-item">
+                            <input type="search" class="form-control bg-primary bg-opacity-25 search_box"
+                                placeholder="Search for Products, Brands and More" aria-label="Search">
+
+                            <img src="assets/logo/search-interface-symbol.png" class="search_icon" alt="">
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle text-black login" data-bs-toggle="dropdown"
+                                role="button">
+                                <img src="assets/logo/user.png" style="height: 20px; margin-left: 30px;" alt="">
+                                Login
+                            </a>
+                            <ul class="dropdown-menu shadow border-0 login_dropdown ">
+                                <li>
+                                    <a href="#" class="dropdown-item">
+                                        New Customers? <span class="d-inline-block ms-5  text-primary">Sign
+                                            Up</span>
+                                    </a>
+                                    <hr class="mt-2 mb-1">
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/user.png" class="logo-drpmen" alt="">
+                                        My Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/fkplus.svg" class="logo-drpmen" alt="">
+                                        Flipkart Plus Zone
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/box.png" class="logo-drpmen" alt="">
+                                        Orders
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/heart.png" class="logo-drpmen" alt="">
+                                        Wishlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/gift.png" class="logo-drpmen" alt="">
+                                        Rewards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/money.png" class="logo-drpmen" alt="">
+                                        Gift Cards
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link text-black cart">
+                                <img src="assets/logo/shopping-cart.png" style="height: 20px;margin-left: 30px;" alt="">
+                                <span>Cart</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bseller ">
+                            <a href="#" class="nav-link text-black ">
+                                <img src="assets/logo/Store.svg" style="height: 20px;margin-left: 30px;" alt="">
+                                Become a Seller
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link text-black " role="button" data-bs-toggle="dropdown">
+                                <img src="assets/logo/more.png" style="height: 20px;margin-left: 40px;" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/bell.png" class="logo-drpmen" alt="">
+                                        Notification Preferences
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/headphones.png" class="logo-drpmen" alt="">
+                                        24x7 Customer Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/arrow.png" class="logo-drpmen" alt="">
+                                        Advertise
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item font-small text-black">
+                                        <img src="assets/logo/download.png" class="logo-drpmen" alt="">
+                                        Download App
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <div class="collapse navbar-collapse" id="navbar">
+                        
+                        <ul class="navbar-nav me-auto">
+                           
+                           
+                        </ul>
+                    </div> -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid bg-white ">
+        <div class="row">
+            <div class="col d-flex justify-content-evenly align-items-center nav_bottom_menu "
+                style="text-align: center;">
+                <div class="ms-5 nav_bottom_menu_container mt-2">
+                    <img src="assets/images/offers.jpg" alt="">
+                    <p class="dropdown-toggle">Top Offers</p>
+                </div>
+                <div class="nav-item dropdown nav_bottom_menu_container pt-1">
+                    <button class="btn" data-bs-toggle="dropdown">
+                        <img src="assets/images/mobiles.jpg" alt="phones">
+                        <p class="dropdown-toggle">Mobiles & Tablets</p>
+                    </button>
+                    <ul class="dropdown-menu shadow border-0 list_style">
+                        <li class="dropdown-item fw-bold">Mobiles</li>
+                        <li class="dropdown-item">Mi</li>
+                        <li class="dropdown-item">Realme</li>
+                        <li class="dropdown-item">Samsung</li>
+                        <li class="dropdown-item">Infinix</li>
+                        <li class="dropdown-item">OPPO</li>
+                        <li class="dropdown-item">Apple</li>
+                        <li class="dropdown-item">Vivo</li>
+                        <li class="dropdown-item">Honor</li>
+                        <li class="dropdown-item">Asus</li>
+                        <li class="dropdown-item">Poco X2</li>
+                        <li class="dropdown-item">realme Narzo 10</li>
+                        <li class="dropdown-item">Infinix Hot 9</li>
+                        <li class="dropdown-item">IQOO 3</li>
+                        <li class="dropdown-item">iPhone SE</li>
+                        <li class="dropdown-item">Motorola razr</li>
+                        <li class="dropdown-item">realme Narzo 10A</li>
+                        <li class="dropdown-item">Motorola g8 power lite</li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown nav_bottom_menu_container">
+                    <button class="btn" data-bs-toggle="dropdown">
+                        <img src="assets/images/household_appliance.png" alt="">
+                        <p class="dropdown-toggle">TVs & Appliances</p>
+                    </button>
+                    <ul class="dropdown-menu shadow border-0 list_style">
+                        <li class="dropdown-item fw-bold">Washing Machine</li>
+                        <li class="dropdown-item">Fully Automatic Front Load</li>
+                        <li class="dropdown-item">Semi Automatic Top Load</li>
+                        <li class="dropdown-item">Fully Automatic Top Load</li>
+                        <li class="dropdown-item fw-bold">Air Conditioners</li>
+                        <li class="dropdown-item">Inverter AC</li>
+                        <li class="dropdown-item">Split ACs</li>
+                        <li class="dropdown-item">Window ACs</li>
+                        <li class="dropdown-item fw-bold">Shop By Brand</li>
+                        <li class="dropdown-item">LG</li>
+                        <li class="dropdown-item">Hitachi</li>
+                        <li class="dropdown-item">Carrier</li>
+                        <li class="dropdown-item">Refrigerators</li>
+                        <li class="dropdown-item">Single Door</li>
+                        <li class="dropdown-item">Double Door</li>
+                        <!-- <li class="dropdown-item">Triple door</li>
+                        <li class="dropdown-item">Side by Side</li>
+                        <li class="dropdown-item">Convertible</li> -->
+                    </ul>
+
+                </div>
+                <div>
+                    <button class="btn" data-bs-toggle="dropdown">
+                        <img src="assets/images/electronic.png" alt="">
+                        <p class="dropdown-toggle">electronics</p>
+                    </button>
+                    <ul class="dropdown-menu shadow border-0 list_style">
+                        <li class="dropdown-item fw-bold">Mobile Accessories</li>
+                        <li class="dropdown-item">Mobile Cases</li>
+                        <li class="dropdown-item">Headphones & Headsets</li>
+                        <li class="dropdown-item">Power Banks</li>
+                        <li class="dropdown-item">Screenguards</li>
+                        <li class="dropdown-item">Memory Cards</li>
+                        <li class="dropdown-item">Smart Headphones</li>
+                        <li class="dropdown-item">Mobile Cables</li>
+                        <li class="dropdown-item">Mobile Chargers</li>
+                        <li class="dropdown-item">Mobile Holders</li>
+                        <li class="dropdown-item fw-bold">Smart Wearable Tech</li>
+                        <li class="dropdown-item">Smart Watches</li>
+                        <li class="dropdown-item">Smart Glasses (VR)</li>
+                        <li class="dropdown-item">Smart Bands</li>
+                        <li class="dropdown-item fw-bold">Health Care Appliances</li>
+                        <li class="dropdown-item">Bp Monitors</li>
+                        <li class="dropdown-item">Weighing Scale</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <button class="btn" data-bs-toggle="dropdown">
+                        <img src="assets/images/Fashion.png" alt="">
+                        <p class="dropdown-toggle">Fashion</p>
+                    </button>
+                    <ul class="dropdown-menu shadow border-0 list_style">
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <li class="dropdown-item fw-bold">Footwear</li>
+                                <li class="dropdown-item">Sports Shoes</li>
+                                <li class="dropdown-item">Casual Shoes</li>
+                                <li class="dropdown-item">Formal Shoes</li>
+                                <li class="dropdown-item">Sandals & Floaters</li>
+                                <li class="dropdown-item">Flip- Flops</li>
+                                <li class="dropdown-item">Loafers</li>
+                                <li class="dropdown-item">Boots</li>
+                                <li class="dropdown-item">Running Shoes</li>
+                                <li class="dropdown-item">Sneakers</li>
+                                <li class="dropdown-item fw-bold">Men's Grooming</li>
+                                <li class="dropdown-item">Deodorants</li>
+                                <li class="dropdown-item">Perfumes</li>
+                                <li class="dropdown-item">Beard Care & Grooming</li>
+                                <li class="dropdown-item">Shaving & Aftershave</li>
+                                <li class="dropdown-item">Sexual Wellness</li>
+                            </div>
+                            <div class="col">
+                                <li class="dropdown-item fw-bold">Clothing</li>
+                                <li class="dropdown-item">Top wear</li>
+                                <li class="dropdown-item">T-Shirts</li>
+                                <li class="dropdown-item">Formal Shirts</li>
+                                <li class="dropdown-item">Casual Shirts</li>
+                                <li class="dropdown-item">Bottom wear</li>
+                                <li class="dropdown-item">Jeans</li>
+                                <li class="dropdown-item">Casual Trousers</li>
+                                <li class="dropdown-item">Formal Trousers</li>
+                                <li class="dropdown-item">Track pants</li>
+                                <li class="dropdown-item">Shorts</li>
+                                <li class="dropdown-item">Cargos</li>
+                                <li class="dropdown-item">Three Fourths</li>
+                                <li class="dropdown-item">Suits, Blazers & Waistcoats</li>
+                                <li class="dropdown-item">Ties, Socks, Caps & More</li>
+                                <!-- <li class="dropdown-item">Fabrics</li> -->
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <div class="nav_bottom_menu_container">
+                    <button class="btn" data-bs-toggle="dropdown">
+                        <img src="assets/images/beauty_food.png" alt="">
+                        <p class="dropdown-toggle">Beauty , Food..</p>
+                    </button>
+                    <ul class="dropdown-menu shadow border-0 list_style">
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <li class="dropdown-item fw-bold">Beauty & Grooming</li>
+                                <li class="dropdown-item">Make Up</li>
+                                <li class="dropdown-item">Skin Care</li>
+                                <li class="dropdown-item">Hair Care</li>
+                                <li class="dropdown-item">Bath & Spa</li>
+                                <li class="dropdown-item">Deodorants & Perfumes</li>
+                                <li class="dropdown-item fw-bold">Jewellery</li>
+                                <li class="dropdown-item">Artificial Jewellery</li>
+                                <li class="dropdown-item">Silver Jewellery</li>
+                                <li class="dropdown-item">Precious Jewellery</li>
+                                <li class="dropdown-item">Coins and Bars</li>
+                                <li class="dropdown-item fw-bold">Accessories</li>
+                                <li class="dropdown-item">Handbags</li>
+                                <li class="dropdown-item">Shoulder Bags</li>
+                                <li class="dropdown-item">Totes</li>
+                                <li class="dropdown-item">Sling bags</li>
+                                <!-- <li class="dropdown-item">Clutches</li>
+                                <li class="dropdown-item">Wallets & Belts</li>
+                                <li class="dropdown-item">Luggage & Travel</li> -->
+                            </div>
+                            <div class="col">
+                                <li class="dropdown-item">Sunglasses</li>
+                                <li class="dropdown-item">Frames</li>
+                                <li class="dropdown-item fw-bold">Featured</li>
+                                <li class="dropdown-item">Forever 21</li>
+                                <li class="dropdown-item">Accessorize</li>
+                                <li class="dropdown-item">W</li>
+                                <li class="dropdown-item">Pantaloons</li>
+                                <li class="dropdown-item">Chemistry</li>
+                                <li class="dropdown-item">Lakme</li>
+                                <li class="dropdown-item">Nivea</li>
+                                <li class="dropdown-item">Catwalk</li>
+                                <li class="dropdown-item">Titan-Raga</li>
+                                <li class="dropdown-item">Fastrack</li>
+                                <li class="dropdown-item">Divastri</li>
+                                <li class="dropdown-item">Rare Roots</li>
+                                <li class="dropdown-item">Anmi</li>
+                                <li class="dropdown-item">Coins & Bars</li>
+                                <!-- <li class="dropdown-item">Crocs</li> -->
+                                <!-- <li class="dropdown-item">Trending today!</li>
+                                <li class="dropdown-item">Ruffles & Frills</li>
+                                <li class="dropdown-item">Pastel Kurtas & Kurtis</li>
+                                <li class="dropdown-item">Designer Net Sarees</li> -->
+                            </div>
+                        </div>
+
+                    </ul>
+
+                </div>
+                <div class="nav_bottom_menu_container">
+                    <button class="btn" data-bs-toggle="dropdown">
+                        <img src="assets/images/home_and_kitchen.png" alt="">
+                        <p class="dropdown-toggle">Home & Kitchen</p>
+                    </button>
+                    <ul class="dropdown-menu shadow border-0 list_style">
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <li class="dropdown-item fw-bold">Kitchen, Cookware & Serveware</li>
+                                <li class="dropdown-item">Pans</li>
+                                <li class="dropdown-item">Tawas</li>
+                                <li class="dropdown-item">Pressure Cookers</li>
+                                <li class="dropdown-item">Kitchen tools</li>
+                                <li class="dropdown-item">Gas Stoves</li>
+                                <li class="dropdown-item fw-bold">Tableware & Dinnerware</li>
+                                <li class="dropdown-item">Coffee Mugs</li>
+                                <li class="dropdown-item">Dinner Set</li>
+                                <li class="dropdown-item">Barware</li>
+                                <li class="dropdown-item">Kitchen Storage</li>
+                                <li class="dropdown-item">Water Bottles</li>
+                                <li class="dropdown-item">Lunch Boxes</li>
+                                <li class="dropdown-item">Flasks</li>
+                                <li class="dropdown-item">Casseroles</li>
+                                <li class="dropdown-item">Kitchen Containers</li>
+                            </div>
+                            <div class="col">
+                                <li class="dropdown-item">Cleaning Supplies</li>
+                                <li class="dropdown-item fw-bold">Furniture Top Offers</li>
+                                <li class="dropdown-item fw-bold">Bed Room Furniture</li>
+                                <li class="dropdown-item">Beds</li>
+                                <li class="dropdown-item">Mattresses</li>
+                                <li class="dropdown-item">Wardrobes</li>
+                                <li class="dropdown-item">Living Room Furniture</li>
+                                <li class="dropdown-item">Sofa</li>
+                                <li class="dropdown-item">Sofa Beds</li>
+                                <li class="dropdown-item">TV Units</li>
+                                <li class="dropdown-item">Dining Tables & Chairs</li>
+                                <li class="dropdown-item">Coffee Tables</li>
+                                <li class="dropdown-item">Shoe Racks</li>
+                                <li class="dropdown-item">Office & Study Furniture</li>
+                                <li class="dropdown-item">Kids Room Furniture</li>
+                                <li class="dropdown-item">DIY Furniture</li>
+                                <!-- <li class="dropdown-item">Bean Bags</li>
+                            <li class="dropdown-item">Collapsible Wardrobes</li> -->
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <div>
+                    <button class="btn" data-bs-toggle="dropdown">
+                        <img src="assets/images/Furnitures.png" alt="">
+                        <p class="dropdown-toggle">Furniture</p>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0 list_style">
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <li class="dropdown-item fw-bold">Furnishing</li>
+                                <li class="dropdown-item">Bedsheets</li>
+                                <li class="dropdown-item">Curtains</li>
+                                <li class="dropdown-item">Cushions & Pillows</li>
+                                <li class="dropdown-item">Blankets</li>
+                                <li class="dropdown-item">Bath Towels</li>
+                                <li class="dropdown-item fw-bold">Kitchen & Table Linen</li>
+                                <li class="dropdown-item">Floor Coverings</li>
+                                <li class="dropdown-item">Smart Home Automation</li>
+                                <li class="dropdown-item">Smart Security System</li>
+                                <li class="dropdown-item">Smart Door Locks</li>
+                                <li class="dropdown-item">Home Improvement</li>
+                                <li class="dropdown-item fw-bold">Tools & Measuring Equipments</li>
+                                <li class="dropdown-item">Home Utilities & Organizers</li>
+                            </div>
+                            <div class="col">
+                                <li class="dropdown-item">Lawn & Gardening</li>
+                                <li class="dropdown-item">Bathroom & Kitchen Fittings</li>
+                                <li class="dropdown-item">Home Decor</li>
+                                <li class="dropdown-item">Paintings</li>
+                                <li class="dropdown-item">Clocks</li>
+                                <li class="dropdown-item">Wall Shelves</li>
+                                <li class="dropdown-item">Stickers</li>
+                                <li class="dropdown-item">Showpieces & Figurines</li>
+                                <li class="dropdown-item">Home Lighting</li>
+                                <li class="dropdown-item">Bulbs</li>
+                                <li class="dropdown-item">Wall Lamp</li>
+                                <li class="dropdown-item">Table Lamp</li>
+                                <li class="dropdown-item">Ceiling Lamp</li>
+                                <li class="dropdown-item">Emergency Lights</li>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <div>
+                    <img src="assets/images/Travel.png" alt="">
+                    <p class="dropdown-toggle">Travel</p>
+                </div>
+                <div class="me-5">
+                    <button class="btn" data-bs-toggle="dropdown">
+                        <img src="assets/images/grocery.png" alt="">
+                        <p class="dropdown-toggle">Grocery</p>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0 list_style">
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <li class="dropdown-item fw-bold">Food Essentials</li>
+                                <li class="dropdown-item">Nuts & Dry Fruits</li>
+                                <li class="dropdown-item">Tea, Coffee and Beverages</li>
+                                <li class="dropdown-item">Chocolates</li>
+                                <li class="dropdown-item">Snacks Corner</li>
+                                <li class="dropdown-item">Gifting Combos</li>
+                                <li class="dropdown-item">Sweets Store</li>
+                                <li class="dropdown-item">Jams, Spreads and Honey</li>
+                                <li class="dropdown-item">Breakfast Items</li>
+                                <li class="dropdown-item fw-bold">Health & Nutrition</li>
+                                <li class="dropdown-item">All Supplements</li>
+                                <li class="dropdown-item">Protein Supplements</li>
+                                <li class="dropdown-item">Vitamin Supplements</li>
+                                <li class="dropdown-item">Health Drinks</li>
+                                <li class="dropdown-item">Ayurvedic Supplements</li>
+                            </div>
+                            <div class="col">
+                                <li class="dropdown-item fw-bold">Books</li>    
+                                <li class="dropdown-item">Entrance Exams</li>
+                                <li class="dropdown-item">Academics</li>
+                                <li class="dropdown-item">Literature & Fiction</li>
+                                <li class="dropdown-item">Non Fiction</li>
+                                <li class="dropdown-item">Young Readers</li>
+                                <li class="dropdown-item">Self-Help</li>
+                                <li class="dropdown-item">E-Learning</li>
+                                <li class="dropdown-item">Preorders</li>
+                                <li class="dropdown-item">Indian Languages</li>
+                                <li class="dropdown-item">Stationery</li>
+                                <li class="dropdown-item">Pens</li>
+                                <li class="dropdown-item">Diaries</li>
+                                <li class="dropdown-item">Card Holders</li>
+                                <li class="dropdown-item">Desk Organizers</li>
+                                <li class="dropdown-item">Calculators</li>
+                                <li class="dropdown-item">Key Chains</li>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row py-3">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators" style="list-style: none;">
+                        <li data-bs-target="#mycarousel" data-bs-slide-to="0"></li>
+                        <li data-bs-target="#mycarousel" data-bs-slide-to="1" class="active"></li>
+                        <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#mycarousel" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#mycarousel" data-bs-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/images/carousel_img_01.webp" class="d-block w-100" style="height: 250px;"
+                                alt="">
+                            <div class="carousel-caption"></div>
+                        </div>
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="assets/images/carousel_img_02.webp" class="d-block w-100" style="height: 250px;"
+                                alt="">
+                            <div class="carousel-caption"></div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/images/carousel_img_03.webp" class="d-block w-100" style="height: 250px;"
+                                alt="">
+                            <div class="carousel-caption"></div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/images/carousel_img_04.webp" class="d-block w-100" style="height: 250px;"
+                                alt="">
+                            <div class="carousel-caption"></div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="assets/images/carousel_img_05.webp" class="d-block w-100" style="height: 250px;"
+                                alt="">
+                            <div class="carousel-caption"></div>
+                        </div>
+                    </div>
+                    <a href="#mycarousel" class="carousel-control-prev prevStyle" data-bs-slide="prev">
+                        <!-- <span class="carousel-control-prev-icon prevIcon"></span> -->
+                        <img src="assets/logo/back.png" style="width: 30%;" alt="">
+
+                    </a>
+                    <a href="#mycarousel" class="carousel-control-next prevStyle"
+                        style="border-radius: 5px 0px 0px 5px;" data-bs-slide="next">
+                        <!-- <span class="carousel-control-next-icon "></span> -->
+                        <img src="assets/logo/next.png" style="width: 30%;" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid ms-0 text-center bg-white" style="height:300px;">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel carousel_01 slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active">
+                        <div class="col-lg-3 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/OnePlus_Earbuds.webp" class="img-fluid carousel_01_img">
+                                    <p class="m-0">Best Truewireless Headphone</p>
+                                    <h6 class="pb-3">Grab Now</h6>
+                                </div>
+                                <!-- <div class="card-img-overlay">Slide </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-3 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/FastTrack_SmartWatch.png" class="img-fluid carousel_01_img">
+                                    <p class="m-0">FastTrack SmartWatch</p>
+                                    <h6 class="pb-3">From &#8377;999 </h6>
+                                </div>
+                                <!-- <div class="card-img-overlay">Slide 2</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-3 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/projector.png" class="img-fluid carousel_01_img">
+                                    <p class="m-0">Projector</p>
+                                    <h6 class="pb-3">From &#8377;999</h6>
+                                </div>
+                                <!-- <div class="card-img-overlay">Slide 3</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-3 card_container">
+                            <div class="card border border-0 bg-white">
+                                <div class="card-img">
+                                    <img src="assets/images/viewSonic_Monitors.png" class="img-fluid carousel_01_img">
+                                    <p class="m-0">ViewSonic Monitors</p>
+                                    <h6 class="pb-3">Form &#8377;6000</h6>
+                                </div>
+                                <!-- <div class="card-img-overlay">Slide 4</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-3 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/printer.png" class="img-fluid carousel_01_img">
+                                    <p class="m-0">Printer</p>
+                                    <h6 class="pb-3">From &#8377;2336</h6>
+                                </div>
+                                <!-- <div class="card-img-overlay">Slide 5</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-3 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/asus_monitor.png" class="img-fluid carousel_01_img">
+                                    <p class="m-0">Asus Monitors</p>
+                                    <h6 class="pb-3">From &#8377;8000</h6>
+                                </div>
+                                <!-- <div class="card-img-overlay">Slide 6</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a> -->
+                <a href="#recipeCarousel" class="carousel-control-prev prevStyle_02" data-bs-slide="prev">
+                    <!-- <span class="carousel-control-prev-icon prevIcon"></span> -->
+                    <img src="assets/logo/back.png" style="width: 30%;" alt="">
+
+                </a>
+                <a href="#recipeCarousel" class="carousel-control-next prevStyle_02"
+                    style="border-radius: 5px 0px 0px 5px;" data-bs-slide="next">
+                    <img src="assets/logo/next.png" style="width: 30%;" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ms-0 mt-2 text-center">
+        <div class="row mx-auto my-auto justify-content-center w-100">
+            <div id="smartphoneCarousel" class="carousel carousel_02 slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <h4 class="bg-white m-0 text-start ms-3 pt-3">Best Deals on Smartphones</h4>
+                    <div class="carousel-item carousel-item-02 active">
+                        <div class="col-lg-2 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/Apple_iPhone_13_Blue.png" alt=""
+                                        class="carousel_02_img">
+                                    <p class="m-0">Apple Iphone 13</p>
+                                    <h6 class="pb-3">From &#8377;39,999*</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-02">
+                        <div class="col-lg-2 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/Motorola_G85_5G.png" alt=""
+                                        class="carousel_02_img">
+                                    <p class="m-0">Motorola G85 5G</p>
+                                    <h6 class="pb-3">From &#8377;14,999*</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-02">
+                        <div class="col-lg-2 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/Oneplus-Nord-4-5G-Mercurial-Silver.png" alt=""
+                                        class="carousel_02_img">
+                                    <p class="m-0">OnePlus Nord 4</p>
+                                    <h6 class="pb-3">From &#8377;29,999*</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-02">
+                        <div class="col-lg-2 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/Oppo_K12x_5G.png" alt="" class="carousel_02_img">
+                                    <p class="m-0">Oppo K12x 5G</p>
+                                    <h6 class="pb-3">From &#8377;10,999*</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-02">
+                        <div class="col-lg-2 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/Realme_P3_Ultra.jpg" alt=""
+                                        class="carousel_02_img">
+                                    <p class="m-0">Realme P3 Ultra</p>
+                                    <h6 class="pb-3">From &#8377;25,999*</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-02">
+                        <div class="col-lg-2 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/Realme_P3x_5G.png" alt="" class="carousel_02_img">
+                                    <p class="m-0">Realme P3x 5G</p>
+                                    <h6 class="pb-3">From &#8377;11,999*</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-02">
+                        <div class="col-lg-2 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/Samsung_S24.png" alt="" class="carousel_02_img">
+                                    <p class="m-0">Samsung S24</p>
+                                    <h6 class="pb-3">From &#8377;44,999*</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-02">
+                        <div class="col-lg-2 card_container">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <img src="assets/images/Vivo_T4x_5G.png" alt="" class="carousel_02_img">
+                                    <p class="m-0">Vivo T4 5G</p>
+                                    <h6 class="pb-3">From &#8377;13,499*</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="carousel-control-prev bg-transparent w-aut" href="#smartphoneCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#smartphoneCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a> -->
+                <a href="#smartphoneCarousel" class="carousel-control-prev prevStyle_02" data-bs-slide="prev">
+                    <!-- <span class="carousel-control-prev-icon prevIcon"></span> -->
+                    <img src="assets/logo/back.png" style="width: 30%;" alt="">
+
+                </a>
+                <a href="#smartphoneCarousel" class="carousel-control-next prevStyle_02"
+                    style="border-radius: 5px 0px 0px 5px;" data-bs-slide="next">
+                    <!-- <span class="carousel-control-next-icon "></span> -->
+                    <img src="assets/logo/next.png" style="width: 30%;" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3 mb-3">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card border border-0 p-3">
+                    <h4>Season's Top Picks </h4>
+                    <div class="row">
+                        <div class="col-md-6 mx-auto py-2">
+                            <div class="card w-100">
+                                <img src="assets/images/Men Regular Fit Self Design Casual Shirt.webp" alt=""
+                                    class="card-img card_image ">
+                                <div class="card-body">
+                                    <p class="card-title m-0 mt-2">Causal Shirts</p>
+                                    <h6 class="text-success">Min. 50% Off</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mx-auto py-2">
+                            <div class="card">
+                                <img src="assets/images/Get Fresh 07Dry Fruits Nut Mix Black & Green Raisin,Almonds,Cashews,Apricot,Pistachios,  (500 g).webp"
+                                    alt="" class="card-img card_image">
+                                <div class="card-body">
+                                    <p class="card-title m-0 mt-2">Dry Fruit, Nut & Seed</p>
+                                    <h6 class="text-success">Min. 50% Off</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mx-auto">
+                            <div class="card">
+                                <img src="assets/images/AUTOSITE Nylon Arm Sleeve For Boys & Girls  (Free, Black).webp"
+                                    alt="" class="card-img card_image">
+                                <div class="card-body">
+                                    <p class="card-title m-0 mt-2">Arm Sleeve</p>
+                                    <h6 class="text-success">Min. 50% Off</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mx-auto">
+                            <div class="card">
+                                <img src="assets/images/Polka Print Daily Wear Georgette Saree  (Yellow).webp" alt=""
+                                    class="card-img card_image">
+                                <div class="card-body">
+                                    <p class="card-title m-0 mt-2">Women's Sarees</p>
+                                    <h6 class="text-success">Min. 50% Off</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 border border-0">
+                <div class="card border border-0 p-3">
+                    <h4>Appliances for Cool Summer</h4>
+                    <div class="row">
+                        <div class="col-md-6 mx-auto py-2">
+                            <div class="card">
+                                <img src="assets/images/ZEBRONICS Zeb-Thunder (Sea Green) Bluetooth  (Sea Green, On the Ear).webp" alt=""
+                                    class="card-img card_image ">
+                                <div class="card-body">
+                                    <p class="card-title m-0 mt-2">Wireless Headphones</p>
+                                    <h6 class="text-success">Min. 50% Off</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mx-auto py-2">
+                            <div class="card">
+                                <img src="assets/images/RECTITUDE E88 Pro Foldable Remote Control Drone Dual Camera Drone 720p Video, Wifi Fpv Drone.webp"
+                                    alt="" class="card-img card_image">
+                                <div class="card-body">
+                                    <p class="card-title m-0 mt-2">Cameras</p>
+                                    <h6 class="text-success">Min. 50% Off</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mx-auto">
+                            <div class="card">
+                                <img src="assets/images/Butee Small Air Cooler 360° Adjustable USB-Powered AC for Desk, Home, Office & Car 100 mm 3 Blade Table Fan  (Ultra High Speed , Multicolor  Pack of 1).webp"
+                                    alt="" class="card-img card_image">
+                                <div class="card-body">
+                                    <p class="card-title m-0 mt-2">Air Coolers</p>
+                                    <h6 class="text-success">Min. 50% Off</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mx-auto">
+                            <div class="card">
+                                <img src="assets/images/Hindware Smart Appliances 45 L Room_Personal Air Cooler  (White, Black, XENO).webp" alt=""
+                                    class="card-img card_image">
+                                <div class="card-body">
+                                    <p class="card-title m-0 mt-2">Cooler</p>
+                                    <h6 class="text-success">Min. 50% Off</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border border-0">
+                    <img src="assets/images/Flipkart_Ss.png" alt="" style="height: 42rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" container-fluid banner">
+        <img src="assets/images/flipkart_banner_image.webp" class="img-fluid banner_img" alt="">
+        <div class="row my-2 g-2">
+            <div class="col-md-4">
+                <img src="assets/images/sm_banner_01.webp" class="img-fluid banner_sm_img" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/sm_banner_02.webp" class="img-fluid banner_sm_img" alt="">    
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/sm_banner_03.webp" class="img-fluid banner_sm_img" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/sm_banner_04.webp" class="img-fluid banner_sm_img" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/sm_banner_05.webp" class="img-fluid banner_sm_img" alt="">    
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/sm_banner_06.webp" class="img-fluid banner_sm_img" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-black bg-gradient ">
+        <div class="row ">
+            <div class="col-md-7">
+                <div class="row m-5" style="font-size: 12px;">
+                    <div class="col-md-3">
+                        <p style="color: grey;">ABOUT</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none ">Contact Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">About Us</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Careers</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Flipkart Stories</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Press</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Corporate Information</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <p style="color: grey;">GROUP COMPANIES</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none ">Myntra</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Cleartrip</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Shopsy</a></li> 
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <p style="color: grey;">HELP</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none ">Payments</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Shipping</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Cancellation & Returns</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <p style="color: grey;">CONSUMER POLICY</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none ">Cancellation & Returns</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Terms Of Use</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Security</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Privacy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Sitemap</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">Grievance Redressal</a></li>
+                            <li><a href="#" class="text-white text-decoration-none ">ERP Compliance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="row mt-5 mx-4" style="font-size: 12px;">
+                    <div class="col-md-6 text-white">
+                        <p style="color: grey;">MAIL US:</p>
+                        <p>Flipkart Internet Private Limited,<br> Building Alyssa, Begonia & <br> Clove Embassy Tech Village,<br> Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103,<br> Karnataka, India</p>
+                        
+                        <p style="color: grey;">Social:</p>
+                        <div class="d-flex">
+                            <img src="assets/logo/facebook.png" class="social_img" alt="">
+                            <img src="assets/logo/twitter.png" class="social_img" alt="">
+                            <img src="assets/logo/youtube.png" class="social_img" alt="">
+                            <img src="assets/logo/instagram.png" class="social_img" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 text-white">
+                        <p style="color: grey;">Registered Office Address:</p>
+                    <p >Flipkart Internet Private Limited,<br> Building Alyssa, Begonia & <br> Clove Embassy Tech Village,<br> Outer Ring Road,     Devarabeesanahalli Village,<br> Bengaluru, 560103,<br> Karnataka, India <br>CIN : U51109KA2012PTC066107 <br> Telephone: <font style="color: blue;">044-45614700</font> / <font style="color: blue;">044-67415800</font>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="text-white m-0">
+
+        <div class="row text-white">
+            <div class="col-md-6">
+                <div class="row mt-3 ms-4" style="font-size: 12px;">
+                    <div class="col-md-3">
+                        <img src="assets/logo/Store.svg" class="footer_logo" alt="">
+                        Become a Seller
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/logo/star.png" class="footer_logo" alt="">
+                        Advertise
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/logo/gift.png" class="footer_logo" alt="">
+                        Gift Cards
+
+                    </div>
+                    <div class="col-md-3">
+                        <img src="assets/logo/interrogation-mark.png" class="footer_logo" alt="">
+                        Help Center
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row mt-3">
+                    <div class="col-4" style="font-size: 12px;">
+                        <img src="assets/logo/copyright.png" style="width: 6%;" alt="">
+                        2007-2025 Flipkart.com
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- filter: brightness(0) saturate(100%) invert(84%) sepia(79%) saturate(1194%) hue-rotate(1deg) brightness(103%) contrast(106%); -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+        crossorigin="anonymous"></script>
+    <script>
+        let items = document.querySelectorAll('.carousel_01 .carousel-item')
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+    <script>
+        let items_02 = document.querySelectorAll('.carousel_02 .carousel-item-02')
+        items_02.forEach((el) => {
+            const minPerSlide = 6
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items_02[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+
+</body>
+
+</html>

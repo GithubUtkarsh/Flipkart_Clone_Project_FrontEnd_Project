@@ -1,0 +1,116 @@
+@media only screen and (max-width: 600px) {
+    .form-inline{
+        width: 70%;
+    }
+    .header{
+        height: auto;
+    }
+    .login{
+        /* border: 1px solid green; */
+        width: fit-content;
+        left: 10px;
+    }
+    .nav_icon{
+        width: 50%;
+        /* border: 1px solid green; */
+    }
+    .res-header{
+        display: grid;
+        grid-template-columns:2fr 2fr 4fr;
+    }
+    .login_dropdown li{
+        display: none;
+    }
+    .lists{
+        /* display: grid; */
+        /* border: 1px solid red; */
+        display:flex;
+        flex-direction: row;
+    }
+    .bseller,.search_box,.cart span{
+        display: none;
+    }
+    /* .navbar-brand{
+        width: 100%;
+        border: 1px solid green;
+        text-align: left;
+    } */
+    .navbar-brand img{
+        height: 2rem;
+        margin-left: -3rem;
+    }
+    .drp{
+        position: absolute;
+        z-index: 500;
+    }
+   
+    .nav_bottom_menu div img{
+        /* height: 40vh; */
+        height: 12vh;
+        /* width: 5%; */
+        /* border: 2px solid red; */
+    }
+    .nav_bottom_menu div{
+        margin: 0px 22px 0px 22px;
+        
+    }
+    .nav_bottom_menu div p{
+        font-size: .7rem;
+
+    }
+    .nav_bottom_menu {
+        overflow-x: auto;
+        scrollbar-width: none;
+
+    }
+    .nav_bottom_menu_container{
+        height: 120px;
+        scrollbar-width: none;
+    }
+    .footer_logo{
+    width: 4%;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(79%) saturate(1194%) hue-rotate(1deg) brightness(103%) contrast(106%);
+    }
+    .carousel_02_img,.carousel_01_img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .card_container{
+        width: 100%;
+    }
+
+  
+  }
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
